@@ -88,31 +88,31 @@ export const VEGETERIAN_GROUPS: { [key: string]: AllergenGroup } = {
 export const CAFETERIAS:{[key: string]: Cafeteria} = {
   "kaimaru": {
       name: "카이마루",
-      location: "TODO",
+      location: "학생식당(N11)",
       meals: [],
       operatingHours: []
   },
   "faculty_cafeteria": {
       name: "교수회관",
-      location: "TODO",
+      location: "교수회관(N6) 1~2층",
       meals: [],
       operatingHours: []
   },
   "west": {
       name: "서측 학생식당",
-      location: "TODO",
+      location: "서측 학생회관(W2) 1층",
       meals: [],
       operatingHours: []
   },
   "east_student": {
       name: "동측 학생식당",
-      location: "TODO",
+      location: "교직원회관(E5) 1층",
       meals: [],
       operatingHours: []
   },
   "east_employee": {
       name: "동측 교직원식당",
-      location: "TODO",
+      location: "교직원회관(E5) 2층",
       meals: [],
       operatingHours: []
   },
