@@ -34,11 +34,11 @@ exports.updateMenu = onSchedule("every day 00:00", async () => {
             date.setDate(today.getDate() + dayOffset);
             const dateString = date.toISOString().split('T')[0]; //'YYYY-MM-DD' 형식
             const url = `https://www.kaist.ac.kr/kr/html/campus/053001.html?dvs_cd=${restaurant}&stt_dt=${dateString}`
-            const data = await getData(url);
+            const data = await getData(url); //데이터 스크래핑 
 
             if(data){
-              data_parsed = parseMenu(data, restaurant)
-              await menuCollection.add({
+              data_parsed = parseMenu(data, restaurant) //데이터 파싱(output 형식은 Cafeteria[])
+              await menuCollection.add({ //firestore에 저장 
                 date: dateString,
                 restaurant: restaurant,
                 data: data_parsed
